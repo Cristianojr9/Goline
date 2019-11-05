@@ -23,6 +23,7 @@ nav li a {
 }
 
 #home {
+  padding: 0px;
   list-style-type: none;
   margin: 0 auto;
   max-width: 1368px;
@@ -76,4 +77,47 @@ footer #golinefooter{
   display: inline-flex;
   line-height: 10px;
   justify-content: space-between;
+}
+
+#depoimentos p{
+  font-size: 32px;
+  font-weight: bold;
+  color: #6e46e9;
+}
+
+#depoimentos h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: black;
+  text-align: center;
+}
+#depoimentos h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: black;
+  text-align: center;
+}
+
+#frases h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  justify-content: space-between;
+  font-style: italic;
+}
+
+#frases h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  justify-content: space-between;
+  font-style: italic;
+}
+
+#frases h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  justify-content: space-between;
+  font-style: italic;
 }
