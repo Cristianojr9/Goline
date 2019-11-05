@@ -78,7 +78,7 @@ nav ul li a {
 }
 
 #home #mulher {
-  width: 1500px;
+  width: 100%;
   margin-top: 0%;
 }
 
@@ -141,7 +141,7 @@ nav ul li a {
   width: 407px;
   font-family: Montserrat;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: bold;
   color: #333333;
   margin-top: 2.4%;
   display: -webkit-box;

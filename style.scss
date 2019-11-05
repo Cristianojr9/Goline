@@ -44,7 +44,7 @@ nav {
   justify-content: space-between;
   align-items: flex-start;
   #mulher{
-      width: 1500px;
+      width: 100%;
       margin-top: 0%;
   }
   #textlanding {
@@ -87,7 +87,7 @@ nav {
     width: 407px;
     font-family: Montserrat;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: bold;
     color: #333333;
     margin-top: 2.4%;
     @include alinhamentoflex;
