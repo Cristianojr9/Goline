@@ -14,20 +14,20 @@ nav {
   width: 90%;
   ul {
     width: 100%;
-    max-width: 1366px;
+    max-width: 1920px;
     height: 22px;
     display: flex;
     margin: 0 auto;
     justify-content: flex-end;
     li {
+      padding: 20px;
       list-style: none;
-      width: 150px;
+      width: 120px;
       a {
         font-family: Montserrat;
-        font-size: 13px;
-        font-weight: 500;
+        font-size: 15px;
+        font-weight: bold;
         color: #4f5ce4;
-
         text-decoration: none;
       }
     }
@@ -37,22 +37,31 @@ nav {
   @include alinhamentoflex;
   flex-direction: row;
   align-items: center;
-  margin-top: 2.3%;
+  margin-top: 5%;
   height: 100vh;
   width: 80%;
   max-width: 1366px;
   justify-content: space-between;
   align-items: flex-start;
+  #mulher{
+      width: 1500px;
+      margin-top: 0%;
+  }
   #textlanding {
+    list-style-type: none;    
     width: 100%;
     height: 80%;
     @include alinhamentoflex;
-    margin-left: 5.2%;
+    margin-left: -3%;
+    #goline{
+      margin-top: -30%;
+    }
     #textcalltoaction {
-      width: 432px;
+      margin-top: 5%;
+      width: 100%;
       height: 72px;
       font-family: Montserrat;
-      font-size: 20px;
+      font-size: 30px;
       font-weight: 500;
       text-align: center;
       color: #333333;
