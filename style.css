@@ -1,35 +1,29 @@
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    padding: 14px 16px;
-
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding: 14px 16px;
 }
-  
+
 li {
-    float: right;
+  float: right;
 }
-  
+
 li a {
-    display: block;
-    color: #6e46e9;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: bold; 
+  display: block;
+  color: #6e46e9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-#home{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#mulher{
-    width: 560px;
-    height: 700px;
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
 }
