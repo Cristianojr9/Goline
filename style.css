@@ -22,6 +22,7 @@ li a {
     font-weight: bold; 
 }
 
+
 #home{
     width: 100%;
     display: flex;
@@ -32,4 +33,9 @@ li a {
 #mulher{
     width: 560px;
     height: 700px;
+}
+
+#goline{
+    display: flex;
+    justify-content: center;
 }
