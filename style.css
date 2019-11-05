@@ -1,4 +1,5 @@
 ul {
+  max-width: 1368px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -22,8 +23,15 @@ li a {
 }
 
 #home {
+  max-width: 1368px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px 100px;
+  justify-content: center;
+}
+#textlanding {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
