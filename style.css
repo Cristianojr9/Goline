@@ -7,11 +7,11 @@ ul {
   padding: 14px 16px;
 }
 
-li {
+nav li {
   float: right;
 }
 
-li a {
+nav li a {
   display: block;
   color: #6e46e9;
   text-align: center;
@@ -23,7 +23,8 @@ li a {
 }
 
 #home {
-    margin: 0 auto;
+  list-style-type: none;
+  margin: 0 auto;
   max-width: 1368px;
   display: flex;
   align-items: center;
@@ -37,3 +38,42 @@ li a {
   align-items: center;
 }
 
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+#boxregister p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  justify-content: center;
+}
+
+#boxregister a {
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+	display: inline-flex;
+	justify-content: center;
+	margin: 0px 130px;
+	border-radius: 15px;
+  width: 180px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #00ff40;
+  color:  rgb(0, 119, 60);
+}
+
+footer #golinefooter{
+  fill: black;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#app p{
+  font-size: 15px;
+  display: inline-flex;
+  line-height: 10px;
+  justify-content: space-between;
+}
