@@ -83,6 +83,11 @@ nav ul li a {
   margin-top: 0%;
 }
 
+#home #goline {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 #home #textlanding {
   list-style-type: none;
   width: 100%;
@@ -108,7 +113,7 @@ nav ul li a {
 }
 
 #home #textlanding #textcalltoaction {
-  margin-top: 5%;
+  margin-top: 8%;
   width: 100%;
   height: 72px;
   font-family: Montserrat;
@@ -175,5 +180,180 @@ nav ul li a {
   margin-left: 29%;
   top: -1%;
   z-index: -1;
+}
+
+#depoimentos {
+  font-family: Montserrat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#depoimentos p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: -15%;
+  color: #4f5ce4;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#depoimentos h1 {
+  margin-left: -10%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -10%;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+#depoimentos #frases h1 {
+  font-style: italic;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 13%;
+  margin-left: -400%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#depoimentos #frases h2 {
+  font-style: italic;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#depoimentos #frases h3 {
+  font-style: italic;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -82%;
+  margin-right: -400%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#costureiras {
+  font-family: Montserrat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#costureiras p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 25%;
+  color: #4f5ce4;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#costureiras #costureirasfrases h1 {
+  margin-left: -77%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#costureiras #costureirasfrases p {
+  text-align: left;
+  margin-top: 0%;
+  font-size: 20px;
+  font-weight: normal;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

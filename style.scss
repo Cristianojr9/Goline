@@ -49,6 +49,9 @@ nav {
     width: 100%;
     margin-top: 0%;
   }
+  #goline {
+    transform: scale(1.5);
+  }
   #textlanding {
     list-style-type: none;
     width: 100%;
@@ -59,7 +62,7 @@ nav {
       margin-top: -30%;
     }
     #textcalltoaction {
-      margin-top: 5%;
+      margin-top: 8%;
       width: 100%;
       height: 72px;
       font-family: Montserrat;
@@ -116,7 +119,7 @@ nav {
   p {
     text-align: center;
     font-weight: bold;
-    margin-top: -10%;
+    margin-top: -15%;
     color: #4f5ce4;
     font-size: 40px;
     display: flex;
@@ -159,3 +162,32 @@ nav {
     }
   }
 } 
+#costureiras {
+  font-family: Montserrat;
+  @include alinhamentoflex;  
+  p{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25%;
+    color: #4f5ce4;
+    font-size: 40px;
+    display: flex;
+  }
+  #costureirasfrases{
+    h1{
+      margin-left: -77%;
+      flex-direction: row;
+      @include alinhamentoflex;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    p{
+      text-align: left;
+      margin-top: 0%;
+      font-size: 20px;
+      font-weight: normal;
+      color: black;
+    }
+  }
+
+}
