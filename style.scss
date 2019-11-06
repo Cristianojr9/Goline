@@ -4,16 +4,26 @@
   align-items: center;
   justify-content: center;
 }
+$hd: 1366px;
 body {
+  width: 100%;
+  max-width: 1920px;
   @include alinhamentoflex;
   margin: 0;
   padding: 0;
   font-family: Montserrat;
   list-style: none;
-  //background: #000;
+  overflow-x: hidden;
 }
 nav {
   width: 90%;
+
+  #vector-forma-logo {
+    position: absolute;
+    top: -2%;
+    left: -2%;
+    z-index: -1;
+  }
   ul {
     width: 100%;
     max-width: 1920px;
@@ -42,21 +52,22 @@ nav {
   margin-top: 5%;
   height: 100vh;
   width: 80%;
-  max-width: 1366px;
+  max-width: 1920px;
   justify-content: space-between;
   align-items: flex-start;
   #mulher {
     width: 100%;
-    margin-top: 0%;
+    transform: scale(1.2);
+    margin-top: 5%;
   }
   #textlanding {
     list-style-type: none;
     width: 100%;
     height: 80%;
     @include alinhamentoflex;
-    margin-left: -3%;
+    margin-right: 10.2%;
     #goline {
-      margin-top: -30%;
+      transform: scale(1.5);
     }
     #textcalltoaction {
       margin-top: 5%;
@@ -67,16 +78,27 @@ nav {
       font-weight: 500;
       text-align: center;
       color: #333333;
+      @media screen and (max-width: $hd) {
+        font-size: 25px;
+      }
     }
     #app {
       display: flex;
+      justify-content: space-between;
       font-family: Montserrat;
       font-size: 14px;
       text-align: center;
       color: #333333;
+      margin-top: 5%;
+      .logos-stores {
+        width: 42px;
+        height: 42px;
+      }
       p {
-        width: 182px;
-        height: 18px;
+        font-size: 18px;
+        display: flex;
+        @include alinhamentoflex;
+        flex-direction: row;
       }
     }
   }
@@ -101,27 +123,29 @@ nav {
         color: #148755;
       }
     }
-  } 
+  }
 }
 #vetor-forma-mulher {
   position: absolute;
-  margin-left: 29%;
+  right: 36%;
   top: -1%;
   z-index: -1;
 }
 
-#depoimentos{
-  font-family: Montserrat;
+#depoimentos {
   @include alinhamentoflex;
+  width: 100%;
   p {
-    text-align: center;
-    font-weight: bold;
-    margin-top: -10%;
-    color: #4f5ce4;
+    width: 238px;
+    height: 37px;
+    font-family: Montserrat;
     font-size: 40px;
-    display: flex;
+    font-weight: bold;
+    text-align: left;
+    color: #4e5de4;
   }
   h1 {
+    width: 35%;
     margin-left: -10%;
     text-align: center;
     @include alinhamentoflex;
@@ -129,33 +153,14 @@ nav {
     font-size: 30px;
     font-weight: 100;
   }
-  #frases{
-    h1 {
-      font-style: italic;
-      flex-direction: row;
-      @include alinhamentoflex;
-      margin-top: 13%;
-      margin-left: -400%;
-      font-size: 20px;
-      font-weight: bold;
-    }
+  #frases {
+    @include alinhamentoflex;
     h2 {
       font-style: italic;
-      text-align: center;
-      flex-direction: row;
-      @include alinhamentoflex;
       font-size: 20px;
       font-weight: bold;
-    }
-    h3 {
-      font-style: italic;
-      text-align: center;
-      flex-direction: row;
-      @include alinhamentoflex;
-      margin-top: -82%;
-      margin-right: -400%;
-      font-size: 20px;
-      font-weight: bold;
+      &:nth-child(1) {
+      }
     }
   }
-} 
+}
