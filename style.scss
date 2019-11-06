@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Montserrat;
+  list-style: none;
 }
 nav {
   width: 90%;
@@ -61,11 +62,6 @@ nav {
       display: flex;
       font-family: Montserrat;
       font-size: 14px;
-      font-weight: 500;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.29;
-      letter-spacing: normal;
       text-align: center;
       color: #333333;
       p {
@@ -82,12 +78,18 @@ nav {
     color: #333333;
     margin-top: 2.4%;
     @include alinhamentoflex;
-    a {
-      padding: 2% 5%;
-      border-radius: 10px;
+    button {
+      width: 120px;
+      height: 44px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
       background-color: #1cff9c;
-      text-decoration: none;
-      color: #148755;
+      a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #148755;
+      }
     }
   }
 }
