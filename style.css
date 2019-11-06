@@ -78,6 +78,11 @@ nav ul li a {
           align-items: flex-start;
 }
 
+#home #mulher {
+  width: 100%;
+  margin-top: 0%;
+}
+
 #home #textlanding {
   list-style-type: none;
   width: 100%;
@@ -95,7 +100,11 @@ nav ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 5.2%;
+  margin-left: -3%;
+}
+
+#home #textlanding #goline {
+  margin-top: -30%;
 }
 
 #home #textlanding #textcalltoaction {
@@ -159,5 +168,12 @@ nav ul li a {
   text-decoration: none;
   font-weight: 700;
   color: #148755;
+}
+
+#vetor-forma-mulher {
+  position: absolute;
+  margin-left: 29%;
+  top: -1%;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
