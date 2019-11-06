@@ -1,4 +1,6 @@
 body {
+  width: 100%;
+  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,10 +18,18 @@ body {
   padding: 0;
   font-family: Montserrat;
   list-style: none;
+  overflow-x: hidden;
 }
 
 nav {
   width: 90%;
+}
+
+nav #vector-forma-logo {
+  position: absolute;
+  top: -2%;
+  left: -2%;
+  z-index: -1;
 }
 
 nav ul {
@@ -69,7 +79,7 @@ nav ul li a {
   margin-top: 5%;
   height: 100vh;
   width: 80%;
-  max-width: 1366px;
+  max-width: 1920px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -80,7 +90,9 @@ nav ul li a {
 
 #home #mulher {
   width: 100%;
-  margin-top: 0%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-top: 5%;
 }
 
 #home #goline {
@@ -105,11 +117,12 @@ nav ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: -3%;
+  margin-right: 10.2%;
 }
 
 #home #textlanding #goline {
-  margin-top: -30%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 #home #textlanding #textcalltoaction {
@@ -123,19 +136,49 @@ nav ul li a {
   color: #333333;
 }
 
+@media screen and (max-width: 1366px) {
+  #home #textlanding #textcalltoaction {
+    font-size: 25px;
+  }
+}
+
 #home #textlanding #app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: Montserrat;
   font-size: 14px;
   text-align: center;
   color: #333333;
+  margin-top: 5%;
+}
+
+#home #textlanding #app .logos-stores {
+  width: 42px;
+  height: 42px;
 }
 
 #home #textlanding #app p {
-  width: 182px;
-  height: 18px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
 }
 
 #home #boxregister {
@@ -177,13 +220,12 @@ nav ul li a {
 
 #vetor-forma-mulher {
   position: absolute;
-  margin-left: 29%;
+  right: 36%;
   top: -1%;
   z-index: -1;
 }
 
 #depoimentos {
-  font-family: Montserrat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,20 +239,21 @@ nav ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 #depoimentos p {
-  text-align: center;
-  font-weight: bold;
-  margin-top: -15%;
-  color: #4f5ce4;
+  width: 238px;
+  height: 37px;
+  font-family: Montserrat;
   font-size: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  font-weight: bold;
+  text-align: left;
+  color: #4e5de4;
 }
 
 #depoimentos h1 {
+  width: 35%;
   margin-left: -10%;
   text-align: center;
   display: -webkit-box;
@@ -231,77 +274,7 @@ nav ul li a {
   font-weight: 100;
 }
 
-#depoimentos #frases h1 {
-  font-style: italic;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 13%;
-  margin-left: -400%;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#depoimentos #frases h2 {
-  font-style: italic;
-  text-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#depoimentos #frases h3 {
-  font-style: italic;
-  text-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: -82%;
-  margin-right: -400%;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#costureiras {
-  font-family: Montserrat;
+#depoimentos #frases {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,43 +290,9 @@ nav ul li a {
           justify-content: center;
 }
 
-#costureiras p {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 25%;
-  color: #4f5ce4;
-  font-size: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#costureiras #costureirasfrases h1 {
-  margin-left: -77%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-#costureiras #costureirasfrases p {
-  text-align: left;
-  margin-top: 0%;
+#depoimentos #frases h2 {
+  font-style: italic;
   font-size: 20px;
-  font-weight: normal;
-  color: black;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
