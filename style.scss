@@ -96,12 +96,17 @@ nav {
       .logos-stores {
         width: 42px;
         height: 42px;
+        margin-right: 9px;
       }
       p {
+        width: 40opx;
         font-size: 18px;
         display: flex;
         @include alinhamentoflex;
         flex-direction: row;
+        &:nth-child(2){
+          width: 300px;
+        }
       }
     }
   }
@@ -139,7 +144,6 @@ nav {
   @include alinhamentoflex;
   width: 100%;
   p {
-    width: 238px;
     height: 37px;
     font-family: Montserrat;
     font-size: 40px;
@@ -148,24 +152,32 @@ nav {
     color: #4e5de4;
   }
   h1 {
+    display: flex;
     width: 35%;
-    margin-left: -10%;
     text-align: center;
     @include alinhamentoflex;
-    margin-left: -10%;
     font-size: 30px;
     font-weight: 100;
   }
   #frases {
-    @include alinhamentoflex;
+    width: 100%;
+    div{
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+    }  
+    @include alinhamentoflex;   
     h2 {
+      flex-direction: row;
+      text-align: center;
       font-style: italic;
       font-size: 20px;
       font-weight: bold;
-      &:nth-child(1) {
-      }
+    }&:nth-child(1) {
+      align-self: flex-start;
+    }&:last-child {
+      align-self: flex-end;
     }
   }
 } 
 
-}

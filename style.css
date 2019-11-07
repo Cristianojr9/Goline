@@ -159,9 +159,11 @@ nav ul li a {
 #home #textlanding #app .logos-stores {
   width: 42px;
   height: 42px;
+  margin-right: 9px;
 }
 
 #home #textlanding #app p {
+  width: 40opx;
   font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,6 +181,10 @@ nav ul li a {
           justify-content: center;
   -ms-flex-direction: row;
       flex-direction: row;
+}
+
+#home #textlanding #app p:nth-child(2) {
+  width: 300px;
 }
 
 #home #boxregister {
@@ -243,7 +249,6 @@ nav ul li a {
 }
 
 #depoimentos p {
-  width: 238px;
   height: 37px;
   font-family: Montserrat;
   font-size: 40px;
@@ -253,11 +258,11 @@ nav ul li a {
 }
 
 #depoimentos h1 {
-  width: 35%;
-  margin-left: -10%;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  text-align: center;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -269,12 +274,12 @@ nav ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: -10%;
   font-size: 30px;
   font-weight: 100;
 }
 
 #depoimentos #frases {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,9 +295,34 @@ nav ul li a {
           justify-content: center;
 }
 
+#depoimentos #frases div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 #depoimentos #frases h2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
   font-style: italic;
   font-size: 20px;
   font-weight: bold;
+}
+
+#depoimentos #frases:nth-child(1) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#depoimentos #frases:last-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
