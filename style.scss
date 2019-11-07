@@ -6,8 +6,6 @@
 }
 $hd: 1366px;
 body {
-  width: 100%;
-  max-width: 1920px;
   @include alinhamentoflex;
   margin: 0;
   padding: 0;
@@ -48,13 +46,10 @@ nav {
 #home {
   @include alinhamentoflex;
   flex-direction: row;
-  align-items: center;
   margin-top: 5%;
   height: 100vh;
   width: 80%;
   max-width: 1920px;
-  justify-content: space-between;
-  align-items: flex-start;
   #mulher {
     width: 100%;
     transform: scale(1.2);
@@ -63,14 +58,15 @@ nav {
   #textlanding {
     list-style-type: none;
     width: 100%;
-    height: 80%;
+    height: 60%;
     @include alinhamentoflex;
     margin-right: 10.2%;
+    justify-content: end;
     #goline {
       transform: scale(1.5);
     }
     #textcalltoaction {
-      margin-top: 5%;
+      margin-top: 7%;
       width: 100%;
       height: 72px;
       font-family: Montserrat;
@@ -89,23 +85,28 @@ nav {
       font-size: 14px;
       text-align: center;
       color: #333333;
-      margin-top: 5%;
+      margin-top: 10%;
       .logos-stores {
         width: 42px;
         height: 42px;
+        margin-right: 15px;
       }
       p {
+        width: 400px;
         font-size: 18px;
         display: flex;
         @include alinhamentoflex;
         flex-direction: row;
+        &:nth-child(2) {
+          width: 300px;
+        }
       }
     }
   }
   #boxregister {
-    width: 407px;
+    width: 100%;
     font-family: Montserrat;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: bold;
     color: #333333;
     margin-top: 2.4%;
@@ -127,9 +128,10 @@ nav {
 }
 #vetor-forma-mulher {
   position: absolute;
-  right: 36%;
+  right: 35%;
   top: -1%;
   z-index: -1;
+  transform: scale(1.4);
 }
 
 #depoimentos {
@@ -159,8 +161,6 @@ nav {
       font-style: italic;
       font-size: 20px;
       font-weight: bold;
-      &:nth-child(1) {
-      }
     }
   }
 }

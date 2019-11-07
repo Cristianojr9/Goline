@@ -1,6 +1,4 @@
 body {
-  width: 100%;
-  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,17 +73,10 @@ nav ul li a {
           justify-content: center;
   -ms-flex-direction: row;
       flex-direction: row;
-  align-items: center;
   margin-top: 5%;
   height: 100vh;
   width: 80%;
   max-width: 1920px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 #home #mulher {
@@ -98,7 +89,7 @@ nav ul li a {
 #home #textlanding {
   list-style-type: none;
   width: 100%;
-  height: 80%;
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,6 +104,9 @@ nav ul li a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 10.2%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 #home #textlanding #goline {
@@ -121,7 +115,7 @@ nav ul li a {
 }
 
 #home #textlanding #textcalltoaction {
-  margin-top: 5%;
+  margin-top: 7%;
   width: 100%;
   height: 72px;
   font-family: Montserrat;
@@ -148,15 +142,17 @@ nav ul li a {
   font-size: 14px;
   text-align: center;
   color: #333333;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 #home #textlanding #app .logos-stores {
   width: 42px;
   height: 42px;
+  margin-right: 15px;
 }
 
 #home #textlanding #app p {
+  width: 400px;
   font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,10 +172,14 @@ nav ul li a {
       flex-direction: row;
 }
 
+#home #textlanding #app p:nth-child(2) {
+  width: 300px;
+}
+
 #home #boxregister {
-  width: 407px;
+  width: 100%;
   font-family: Montserrat;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: bold;
   color: #333333;
   margin-top: 2.4%;
@@ -215,9 +215,11 @@ nav ul li a {
 
 #vetor-forma-mulher {
   position: absolute;
-  right: 36%;
+  right: 35%;
   top: -1%;
   z-index: -1;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 #depoimentos {
