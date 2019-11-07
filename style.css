@@ -325,4 +325,41 @@ nav ul li a {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+
+#costureiras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#costureiras p {
+  height: 37px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  color: #4e5de4;
+}
+
+#costureiras div {
+  display: grid h1;
+  display-color: black;
+}
+
+#costureiras div p {
+  color: black;
+  font-size: 130%;
+  font-weight: normal;
+}
 /*# sourceMappingURL=style.css.map */
