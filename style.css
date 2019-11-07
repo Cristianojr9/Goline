@@ -86,6 +86,11 @@ nav ul li a {
   margin-top: 5%;
 }
 
+#home #goline {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 #home #textlanding {
   list-style-type: none;
   width: 100%;
