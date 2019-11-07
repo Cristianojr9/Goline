@@ -100,7 +100,7 @@ nav {
         display: flex;
         @include alinhamentoflex;
         flex-direction: row;
-        &:nth-child(2){
+        &:nth-child(2) {
           width: 300px;
         }
       }
@@ -140,6 +140,18 @@ nav {
 #depoimentos {
   @include alinhamentoflex;
   width: 100%;
+  #vetor-depoimentos-left {
+    position: absolute;
+    z-index: -1;
+    transform: scale(1.2);
+    left: 0;
+  }
+  #vetor-depoimentos-right {
+    position: absolute;
+    z-index: -1;
+    transform: scale(1.2);
+    right: 0;
+  }
   p {
     height: 37px;
     font-family: Montserrat;
@@ -158,28 +170,30 @@ nav {
   }
   #frases {
     width: 100%;
-    div{
+    div {
       display: flex;
       width: 90%;
       justify-content: space-between;
-    }  
-    @include alinhamentoflex;   
+    }
+    @include alinhamentoflex;
     h2 {
       flex-direction: row;
       text-align: center;
       font-style: italic;
       font-size: 20px;
       font-weight: bold;
-    }&:nth-child(1) {
+    }
+    &:nth-child(1) {
       align-self: flex-start;
-    }&:last-child {
+    }
+    &:last-child {
       align-self: flex-end;
     }
   }
-} 
-#costureiras{
-  @include alinhamentoflex;
+}
+#depoimentosCostureiras {
   width: 100%;
+  @include alinhamentoflex;
   p {
     height: 37px;
     font-family: Montserrat;
@@ -188,6 +202,7 @@ nav {
     text-align: left;
     color: #4e5de4;
   }
+<<<<<<< HEAD
   div{
     display: grid
     h1 {
@@ -218,3 +233,70 @@ footer{
     color: black;
   }
 }  
+=======
+  #costureirasfrases {
+    width: 70%;
+    @include alinhamentoflex;
+    .costureira {
+      margin-bottom: 6%;
+      h1 {
+        color: black;
+        font-size: 32px;
+      }
+      p {
+        color: black;
+        font-size: 28px;
+        font-weight: normal;
+      }
+      &:nth-child(2) {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+#team {
+  width: 100%;
+  height: 428px;
+  background: #5f50e7;
+  @include alinhamentoflex;
+  flex-direction: row;
+  .membroequipe {
+    @include alinhamentoflex;
+    margin-right: 9.7%;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 37px;
+    }
+    h3 {
+      font-family: Montserrat;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #ffffff;
+    }
+    h4 {
+      margin-top: -12px;
+      opacity: 0.33;
+      font-family: Montserrat;
+      font-size: 15px;
+      color: #ffffff;
+    }
+  }
+}
+footer {
+  width: 100%;
+  height: 150px;
+  @include alinhamentoflex;
+  flex-direction: row;
+  p {
+    width: 400px;
+    height: 19px;
+    font-family: Montserrat;
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+>>>>>>> 40ff6c952976dcc855cbe7f316383feb52d086ce

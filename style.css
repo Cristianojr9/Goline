@@ -244,6 +244,22 @@ nav ul li a {
   width: 100%;
 }
 
+#depoimentos #vetor-depoimentos-left {
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  left: 0;
+}
+
+#depoimentos #vetor-depoimentos-right {
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  right: 0;
+}
+
 #depoimentos p {
   height: 37px;
   font-family: Montserrat;
@@ -322,7 +338,8 @@ nav ul li a {
       align-self: flex-end;
 }
 
-#costureiras {
+#depoimentosCostureiras {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,10 +353,9 @@ nav ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
 }
 
-#costureiras p {
+#depoimentosCostureiras p {
   height: 37px;
   font-family: Montserrat;
   font-size: 40px;
@@ -348,18 +364,8 @@ nav ul li a {
   color: #4e5de4;
 }
 
-#costureiras div {
-  display: grid h1;
-  display-color: black;
-}
-
-#costureiras div p {
-  color: black;
-  font-size: 130%;
-  font-weight: normal;
-}
-
-footer {
+#depoimentosCostureiras #costureirasfrases {
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,6 +379,50 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#depoimentosCostureiras #costureirasfrases .costureira {
+  margin-bottom: 6%;
+}
+
+#depoimentosCostureiras #costureirasfrases .costureira h1 {
+  color: black;
+  font-size: 32px;
+}
+
+#depoimentosCostureiras #costureirasfrases .costureira p {
+  color: black;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+<<<<<<< HEAD
+footer {
+=======
+#depoimentosCostureiras #costureirasfrases .costureira:nth-child(2) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#team {
+  width: 100%;
+  height: 428px;
+  background: #5f50e7;
+>>>>>>> 40ff6c952976dcc855cbe7f316383feb52d086ce
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+<<<<<<< HEAD
   width: 100%;
 }
 
@@ -396,5 +446,79 @@ footer h1 {
   font-size: 15px;
   display: flex;
   color: black;
+=======
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+#team .membroequipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 9.7%;
+}
+
+#team .membroequipe:last-child {
+  margin-right: 0;
+}
+
+#team .membroequipe img {
+  width: 250px;
+  height: 250px;
+  border-radius: 37px;
+}
+
+#team .membroequipe h3 {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+#team .membroequipe h4 {
+  margin-top: -12px;
+  opacity: 0.33;
+  font-family: Montserrat;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+footer p {
+  width: 400px;
+  height: 19px;
+  font-family: Montserrat;
+  font-size: 15px;
+  padding: 10px;
+>>>>>>> 40ff6c952976dcc855cbe7f316383feb52d086ce
 }
 /*# sourceMappingURL=style.css.map */
