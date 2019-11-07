@@ -86,6 +86,13 @@ nav ul li a {
   margin-top: 5%;
 }
 
+@media (max-width: 1366px) {
+  #home #mulher {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
 #home #goline {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
@@ -227,6 +234,14 @@ nav ul li a {
           transform: scale(1.4);
 }
 
+@media screen and (max-width: 1366px) {
+  #vetor-forma-mulher {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    right: 25%;
+  }
+}
+
 #depoimentos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,9 +270,6 @@ nav ul li a {
 #depoimentos #vetor-depoimentos-right {
   position: absolute;
   z-index: -1;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  right: 0;
 }
 
 #depoimentos p {
@@ -339,7 +351,8 @@ nav ul li a {
 }
 
 #depoimentosCostureiras {
-  width: 100%;
+  width: 90%;
+  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,28 +368,100 @@ nav ul li a {
           justify-content: center;
 }
 
+#depoimentosCostureiras .costureira {
+  margin-bottom: 5%;
+}
+
+#depoimentosCostureiras .costureira:nth-child(3) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#depoimentosCostureiras .costureira p {
+  color: black;
+  font-size: 25px;
+  font-weight: normal;
+}
+
 #depoimentosCostureiras p {
-  height: 37px;
   font-family: Montserrat;
   font-size: 40px;
   font-weight: bold;
-  text-align: left;
   color: #4e5de4;
+  margin-bottom: 5%;
 }
 
-#depoimentosCostureiras div {
-  display: grid h1;
-  display-color: black;
+#depoimentosCostureiras #vetor-costureiras-right {
+  position: absolute;
+  right: 0;
 }
 
-#depoimentosCostureiras div p {
-  color: black;
-  font-size: 130%;
-  font-weight: normal;
+#team {
+  width: 100%;
+  height: 428px;
+  background: #5f50e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+#team .membroequipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 9.7%;
+}
+
+#team .membroequipe:last-child {
+  margin-right: 0;
+}
+
+#team .membroequipe img {
+  width: 250px;
+  height: 250px;
+  border-radius: 37px;
+}
+
+#team .membroequipe h3 {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+#team .membroequipe h4 {
+  margin-top: -12px;
+  opacity: 0.33;
+  font-family: Montserrat;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 #footer {
   width: 100%;
+  height: 200px;
   max-width: 800px;
   -webkit-box-align: center;
       -ms-flex-align: center;

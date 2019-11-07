@@ -54,6 +54,9 @@ nav {
     width: 100%;
     transform: scale(1.2);
     margin-top: 5%;
+    @media (max-width: 1366px) {
+      transform: scale(1.5);
+    }
   }
   #goline {
     transform: scale(1.5);
@@ -135,6 +138,10 @@ nav {
   top: -1%;
   z-index: -1;
   transform: scale(1.4);
+  @media screen and (max-width: 1366px) {
+    transform: scale(0.9);
+    right: 25%;
+  }
 }
 
 #depoimentos {
@@ -149,8 +156,6 @@ nav {
   #vetor-depoimentos-right {
     position: absolute;
     z-index: -1;
-    transform: scale(1.2);
-    right: 0;
   }
   p {
     height: 37px;
@@ -192,31 +197,68 @@ nav {
   }
 }
 #depoimentosCostureiras {
-  width: 100%;
+  width: 90%;
+  margin-top: 10%;
   @include alinhamentoflex;
-  p {
-    height: 37px;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: left;
-    color: #4e5de4;
-  }
-  div{
-    display: grid
-    h1 {
-      color: black;
+  .costureira {
+    &:nth-child(3) {
+      align-self: flex-start;
     }
     p {
       color: black;
-      font-size: 130%;
+      font-size: 25px;
       font-weight: normal;
     }
+    margin-bottom: 5%;
+  }
+  p {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: bold;
+    color: #4e5de4;
+    margin-bottom: 5%;
+  }
+  #vetor-costureiras-right {
+    position: absolute;
+    right: 0;
   }
 }
 
-#footer{
+#team {
   width: 100%;
+  height: 428px;
+  background: #5f50e7;
+  @include alinhamentoflex;
+  flex-direction: row;
+  .membroequipe {
+    @include alinhamentoflex;
+    margin-right: 9.7%;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 37px;
+    }
+    h3 {
+      font-family: Montserrat;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #ffffff;
+    }
+    h4 {
+      margin-top: -12px;
+      opacity: 0.33;
+      font-family: Montserrat;
+      font-size: 15px;
+      color: #ffffff;
+    }
+  }
+}
+#footer {
+  width: 100%;
+  height: 200px;
   max-width: 800px;
   align-items: center;
   @include alinhamentoflex;
@@ -226,9 +268,9 @@ nav {
     margin-left: initial;
     transform: scale(1);
   }
-  a{
+  a {
     font-size: 20px;
     display: flex;
     color: black;
   }
-}  
+}
