@@ -216,11 +216,14 @@ nav {
 }
 
 #footer{
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
   @include alinhamentoflex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 45%;
+  justify-content: space-evenly;
   #golinefooter {
+    margin-left: initial;
     transform: scale(1);
   }
   a{
