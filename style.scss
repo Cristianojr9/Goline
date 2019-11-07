@@ -190,14 +190,31 @@ nav {
   }
   div{
     display: grid
-    h1{
+    h1 {
       color: black;
     }
-    p{
+    p {
       color: black;
       font-size: 130%;
       font-weight: normal;
     }
   }
 }
-
+footer{
+  @include alinhamentoflex;
+  width: 100%;
+  div{
+    justify-content: space-between;
+  }
+  #golinefooter {
+    position: absolute;
+    transform: scale(1.4);
+  }
+  h1{
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    color: black;
+  }
+}  
