@@ -194,6 +194,11 @@ nav {
       justify-content: space-between;
     }
     @include alinhamentoflex;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 37px;
+    }
     h2 {
       flex-direction: row;
       text-align: center;

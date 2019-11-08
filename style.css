@@ -346,6 +346,12 @@ nav ul li a {
           justify-content: space-between;
 }
 
+#depoimentos #frases img {
+  width: 200px;
+  height: 200px;
+  border-radius: 37px;
+}
+
 #depoimentos #frases h2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
