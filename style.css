@@ -137,9 +137,9 @@ nav ul li a {
   color: #333333;
 }
 
-@media screen and (max-width: 1366px) {
+@media (max-width: 1366px) {
   #home #textlanding #textcalltoaction {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -188,6 +188,16 @@ nav ul li a {
   width: 300px;
 }
 
+@media (max-width: 1366px) {
+  #home #textlanding #app {
+    width: 100%;
+    margin-top: 0;
+  }
+  #home #textlanding #app p {
+    font-size: 15px;
+  }
+}
+
 #home #boxregister {
   width: 100%;
   font-family: Montserrat;
@@ -223,6 +233,13 @@ nav ul li a {
   text-decoration: none;
   font-weight: 700;
   color: #148755;
+}
+
+@media (max-width: 1366px) {
+  #home #boxregister {
+    font-size: 12px;
+    margin-top: 0;
+  }
 }
 
 #vetor-forma-mulher {
@@ -350,6 +367,18 @@ nav ul li a {
       align-self: flex-end;
 }
 
+@media (max-width: 1366px) {
+  #depoimentos p {
+    font-size: 30px;
+  }
+  #depoimentos h1 {
+    font-size: 20px;
+  }
+  #depoimentos #frases h2 {
+    font-size: 16px;
+  }
+}
+
 #depoimentosCostureiras {
   width: 90%;
   margin-top: 10%;
@@ -394,6 +423,18 @@ nav ul li a {
 #depoimentosCostureiras #vetor-costureiras-right {
   position: absolute;
   right: 0;
+}
+
+@media (max-width: 1366px) {
+  #depoimentosCostureiras .costureira p {
+    font-size: 20px;
+  }
+  #depoimentosCostureiras .costureira h1 {
+    font-size: 22px;
+  }
+  #depoimentosCostureiras p {
+    font-size: 30px;
+  }
 }
 
 #team {
@@ -457,6 +498,16 @@ nav ul li a {
   font-family: Montserrat;
   font-size: 15px;
   color: #ffffff;
+}
+
+@media (max-width: 1366px) {
+  #team .membroequipe {
+    margin-right: 5%;
+  }
+  #team .membroequipe img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 #footer {

@@ -80,8 +80,8 @@ nav {
       font-weight: 500;
       text-align: center;
       color: #333333;
-      @media screen and (max-width: $hd) {
-        font-size: 25px;
+      @media (max-width: 1366px) {
+        font-size: 20px;
       }
     }
     #app {
@@ -107,6 +107,14 @@ nav {
           width: 300px;
         }
       }
+
+      @media (max-width: 1366px) {
+        width: 100%;
+        margin-top: 0;
+        p {
+          font-size: 15px;
+        }
+      }
     }
   }
   #boxregister {
@@ -129,6 +137,11 @@ nav {
         font-weight: 700;
         color: #148755;
       }
+    }
+
+    @media (max-width: 1366px) {
+      font-size: 12px;
+      margin-top: 0;
     }
   }
 }
@@ -195,6 +208,19 @@ nav {
       align-self: flex-end;
     }
   }
+  @media (max-width: 1366px) {
+    p {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    #frases {
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
 }
 #depoimentosCostureiras {
   width: 90%;
@@ -221,6 +247,19 @@ nav {
   #vetor-costureiras-right {
     position: absolute;
     right: 0;
+  }
+  @media (max-width: 1366px) {
+    .costureira {
+      p {
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
+    p {
+      font-size: 30px;
+    }
   }
 }
 
@@ -253,6 +292,15 @@ nav {
       font-family: Montserrat;
       font-size: 15px;
       color: #ffffff;
+    }
+  }
+  @media (max-width: 1366px) {
+    .membroequipe {
+      margin-right: 5%;
+      img {
+        width: 200px;
+        height: 200px;
+      }
     }
   }
 }
