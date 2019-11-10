@@ -29,17 +29,26 @@ nav {
     display: flex;
     margin: 0 auto;
     justify-content: flex-end;
-    li {
-      padding: 20px;
-      list-style: none;
-      width: 120px;
-      a {
-        font-family: Montserrat;
-        font-size: 15px;
-        font-weight: bold;
-        color: #4f5ce4;
-        text-decoration: none;
-      }
+  }
+  li {
+    padding: 20px;
+    list-style: none;
+    width: 120px;
+    a {
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: bold;
+      color: #4f5ce4;
+      text-decoration: none;
+    }
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+    ul {
+      justify-content: center;
+    }
+    #vetor-forma-logo {
+      display: none;
     }
   }
 }
@@ -63,9 +72,8 @@ nav {
     @media (max-width: 1215px) {
       transform: scale(1.2);
     }
-
-    @media (max-width: 480px) {
-      transform: scale(0);
+    @media (max-width: 500px) {
+      display: none;
     }
   }
   #goline {
@@ -105,7 +113,6 @@ nav {
       display: flex;
       justify-content: space-between;
       font-family: Montserrat;
-      font-size: 14px;
       text-align: center;
       color: #333333;
       margin-top: 10%;
@@ -120,9 +127,6 @@ nav {
         display: flex;
         @include alinhamentoflex;
         flex-direction: row;
-        &:nth-child(2) {
-          width: 300px;
-        }
       }
 
       @media (max-width: 1366px) {
@@ -137,7 +141,6 @@ nav {
         p:nth-child(2) {
           font-size: 12px;
           width: 200px;
-          margin-right: 30px;
         }
         .logos-stores {
           width: 30px;
@@ -174,6 +177,40 @@ nav {
       margin-top: 0;
     }
   }
+  @media (max-width: 500px) {
+    width: 100%;
+    height: 80vh;
+    #textlanding {
+      width: 100%;
+      margin-right: 0;
+      justify-content: center;
+      #goline {
+        transform: scale(1);
+      }
+      #textcalltoaction {
+        font-size: 20px;
+      }
+
+      #app {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p,
+        p:nth-child(2) {
+          width: 100%;
+          font-size: 15px;
+        }
+      }
+      #boxregister {
+        width: 90%;
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 #vetor-forma-mulher {
   position: absolute;
@@ -184,6 +221,9 @@ nav {
   @media screen and (max-width: 1366px) {
     transform: scale(0.9);
     right: 25%;
+  }
+  @media (max-width: 500px) {
+    right: -40%;
   }
 }
 
@@ -254,6 +294,11 @@ nav {
       h2 {
         font-size: 16px;
       }
+    }
+  }
+  @media (max-width: 500px) {
+    h1 {
+      width: 100%;
     }
   }
 }
