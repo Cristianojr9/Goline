@@ -108,8 +108,8 @@ nav li a {
 
 @media (max-width: 1920px) {
   #home #mulher {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
@@ -120,7 +120,6 @@ nav li a {
   }
 }
 
-@media (max-width: 500px) {
 @media (max-width: 1366px) {
   #home #mulher {
     -webkit-transform: scale(1.2);
@@ -128,23 +127,30 @@ nav li a {
   }
 }
 
-@media (max-width: 1215px) {
+@media (max-width: 1280px) {
   #home #mulher {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media (max-width: 500px) {
+  #home #mulher {
+    display: none;
   }
 }
 
 @media (max-width: 1056px) {
   #home #mulher {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
 @media (max-width: 480px) {
   #home #mulher {
-    display: none;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 
@@ -202,14 +208,14 @@ nav li a {
   }
 }
 
-@media (max-width: 1215px) {
+@media (max-width: 1280px) {
   #home #textlanding #goline {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
 }
 
-@media (max-width: 1056) {
+@media (max-width: 1024px) {
   #home #textlanding #goline {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -241,7 +247,19 @@ nav li a {
 
 @media (max-width: 1215px) {
   #home #textlanding #textcalltoaction {
-    font-size: 25px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #home #textlanding #textcalltoaction {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 800px) {
+  #home #textlanding #textcalltoaction {
+    font-size: 20px;
   }
 }
 
@@ -288,7 +306,6 @@ nav li a {
 @media (max-width: 1366px) {
   #home #textlanding #app {
     width: 100%;
-    margin-top: 0;
   }
   #home #textlanding #app p {
     font-size: 15px;
@@ -671,6 +688,16 @@ nav li a {
   font-family: Montserrat;
   font-size: 15px;
   color: #ffffff;
+}
+
+@media (max-width: 1366px) {
+  #team .membroequipe {
+    margin-right: 5%;
+  }
+  #team .membroequipe img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 1366px) {
