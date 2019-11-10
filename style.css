@@ -62,11 +62,18 @@ nav li a {
     width: 100%;
   }
   nav ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  nav #vetor-forma-logo {
+  nav ul li {
+    width: 100%;
+  }
+  nav #vector-forma-logo {
     display: none;
   }
 }
@@ -389,11 +396,6 @@ nav li a {
   left: 0;
 }
 
-#depoimentos #vetor-depoimentos-right {
-  position: absolute;
-  z-index: -1;
-}
-
 #depoimentos p {
   height: 37px;
   font-family: Montserrat;
@@ -491,8 +493,20 @@ nav li a {
 }
 
 @media (max-width: 500px) {
+  #depoimentos #vetor-depoimentos-left {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    left: -20%;
+    opacity: 0.7;
+  }
   #depoimentos h1 {
     width: 100%;
+  }
+  #depoimentos #frases div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -540,6 +554,7 @@ nav li a {
 #depoimentosCostureiras #vetor-costureiras-right {
   position: absolute;
   right: 0;
+  z-index: -1;
 }
 
 @media (max-width: 1366px) {
@@ -551,6 +566,32 @@ nav li a {
   }
   #depoimentosCostureiras p {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  #depoimentosCostureiras #vetor-costureiras-right {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    right: -20%;
+  }
+  #depoimentosCostureiras .costureira {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #depoimentosCostureiras p {
+    text-align: center;
   }
 }
 
@@ -627,6 +668,24 @@ nav li a {
   }
 }
 
+@media (max-width: 500px) {
+  #team {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+  #team .membroequipe {
+    margin-right: 0;
+  }
+  #team .membroequipe img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 #footer {
   width: 100%;
   height: 200px;
@@ -664,5 +723,14 @@ nav li a {
   display: -ms-flexbox;
   display: flex;
   color: black;
+}
+
+@media (max-width: 500px) {
+  #footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

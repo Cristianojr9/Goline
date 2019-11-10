@@ -45,9 +45,14 @@ nav {
   @media (max-width: 500px) {
     width: 100%;
     ul {
-      justify-content: center;
+      margin: 0;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        width: 100%;
+      }
     }
-    #vetor-forma-logo {
+    #vector-forma-logo {
       display: none;
     }
   }
@@ -236,10 +241,6 @@ nav {
     transform: scale(1.2);
     left: 0;
   }
-  #vetor-depoimentos-right {
-    position: absolute;
-    z-index: -1;
-  }
   p {
     height: 37px;
     font-family: Montserrat;
@@ -297,8 +298,18 @@ nav {
     }
   }
   @media (max-width: 500px) {
+    #vetor-depoimentos-left {
+      transform: scale(0.8);
+      left: -20%;
+      opacity: 0.7;
+    }
     h1 {
       width: 100%;
+    }
+    #frases {
+      div {
+        flex-direction: column;
+      }
     }
   }
 }
@@ -327,6 +338,8 @@ nav {
   #vetor-costureiras-right {
     position: absolute;
     right: 0;
+
+    z-index: -1;
   }
   @media (max-width: 1366px) {
     .costureira {
@@ -339,6 +352,18 @@ nav {
     }
     p {
       font-size: 30px;
+    }
+  }
+  @media (max-width: 500px) {
+    #vetor-costureiras-right {
+      transform: scale(0.7);
+      right: -20%;
+    }
+    .costureira {
+      @include alinhamentoflex;
+    }
+    p {
+      text-align: center;
     }
   }
 }
@@ -383,6 +408,18 @@ nav {
       }
     }
   }
+  @media (max-width: 500px) {
+    height: 100%;
+    flex-direction: column;
+    padding: 20px;
+    .membroequipe {
+      margin-right: 0;
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
 }
 #footer {
   width: 100%;
@@ -400,5 +437,8 @@ nav {
     font-size: 20px;
     display: flex;
     color: black;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
   }
 }
