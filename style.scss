@@ -66,14 +66,25 @@ nav {
     width: 50%;
     transform: scale(1.2);
     margin-top: 5%;
+    @media (max-width: 1920px) {
+      transform: scale(1.2);
+    }
+    @media (max-width: 1572px) {
+      transform: scale(1.2);
+    }
     @media (max-width: 1366px) {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
     @media (max-width: 1215px) {
-      transform: scale(1.2);
+      transform: scale(1);
     }
     @media (max-width: 500px) {
       display: none;
+    @media (max-width: 1056px) {
+      transform: scale(1);
+    }
+    @media (max-width: 480px) {
+      transform: scale(0);
     }
   }
   #goline {
@@ -88,7 +99,19 @@ nav {
     justify-content: end;
     #goline {
       transform: scale(1.5);
+      @media (max-width: 1920px) {
+        transform: scale(1.5);
+      }
+      @media (max-width: 1572px) {
+        transform: scale(1.2);
+      }
+      @media (max-width: 1366){
+        transform: scale(1.3);
+      }
       @media (max-width: 1215px) {
+        transform: scale(1);
+      }
+      @media (max-width: 1056) {
         transform: scale(1);
       }
     }
@@ -101,12 +124,14 @@ nav {
       font-weight: 500;
       text-align: center;
       color: #333333;
-      @media (max-width: 1366px) {
-        font-size: 20px;
+      @media (max-width: 1572px) {
+        font-size: 28px;
       }
-
+      @media (max-width: 1366px) {
+        font-size: 28px;
+      }
       @media (max-width: 1215px) {
-        font-size: 15px;
+        font-size: 25px;
       }
     }
     #app {
@@ -325,6 +350,7 @@ nav {
     margin-bottom: 5%;
   }
   #vetor-costureiras-right {
+
     position: absolute;
     right: 0;
   }
