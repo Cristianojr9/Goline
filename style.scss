@@ -40,6 +40,8 @@ nav {
       font-weight: bold;
       color: #4f5ce4;
       text-decoration: none;
+      display: flex;
+      justify-content: center;
     }
   }
   @media (max-width: 640px) {
@@ -319,6 +321,20 @@ nav {
       display: flex;
       width: 90%;
       justify-content: space-between;
+      img{
+        &:nth-child(1){
+          width: 200px;
+          height: 200px;
+          border-radius: 37px;  
+          margin-left: 2%;
+        }
+        &:nth-child(2){
+          width: 200px;
+          height: 200px;
+          border-radius: 37px;
+          margin-right: 2%;
+        }
+      }
     }
     @include alinhamentoflex;
     img {
@@ -348,6 +364,25 @@ nav {
       font-size: 20px;
     }
     #frases {
+      div {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        img{
+          &:nth-child(1){
+            width: 200px;
+            height: 200px;
+            border-radius: 37px;  
+            margin-left: 1%;
+          }
+          &:nth-child(2){
+            width: 200px;
+            height: 200px;
+            border-radius: 37px;
+            margin-right: 1%;
+          }
+        }
+      }
       h2 {
         font-size: 16px;
       }

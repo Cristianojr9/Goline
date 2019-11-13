@@ -55,6 +55,12 @@ nav li a {
   font-weight: bold;
   color: #4f5ce4;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 640px) {
@@ -541,6 +547,20 @@ nav li a {
           justify-content: space-between;
 }
 
+#depoimentos #frases div img:nth-child(1) {
+  width: 200px;
+  height: 200px;
+  border-radius: 37px;
+  margin-left: 2%;
+}
+
+#depoimentos #frases div img:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  border-radius: 37px;
+  margin-right: 2%;
+}
+
 #depoimentos #frases img {
   width: 200px;
   height: 200px;
@@ -574,6 +594,27 @@ nav li a {
   }
   #depoimentos h1 {
     font-size: 20px;
+  }
+  #depoimentos #frases div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #depoimentos #frases div img:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    border-radius: 37px;
+    margin-left: 1%;
+  }
+  #depoimentos #frases div img:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    border-radius: 37px;
+    margin-right: 1%;
   }
   #depoimentos #frases h2 {
     font-size: 16px;
